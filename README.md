@@ -1,2 +1,2 @@
 # Yamiko
-Um simples template utilizando a biblioteca do Discord.
+A simple template using the Discord library.
