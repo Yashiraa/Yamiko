@@ -13,4 +13,7 @@ const client = new Client({
     ]
 })
 
+// Crie um arquivo .env ou coloque o Token do seu bot logo abaixo. (PT-BR)
+// Create an .env file or place your bot's Token below. (EN)
+
 client.login(process.env.TOKEN)
