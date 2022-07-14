@@ -17,7 +17,7 @@ npm i
 TOKEN=OTg3MDMxODc0NTg3MjI2Mjgy.Gif_Iv.4FVw1EwACgYhkOVK0xMb3pvPbd5Ylu3TuR7yn4 (Exemple)
 ```
 
-## Comment installer les dépendances ?
+## How to install dependencies ?
 ```bash
 npm i discord.js dotenv
 npm init -y
