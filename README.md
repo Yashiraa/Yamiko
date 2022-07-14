@@ -14,7 +14,7 @@ npm i
 
 ```json
 //.env
-TOKEN=OTg3MDMxODc0NTg3MjI2Mjgy.Gif_Iv.4FVw1EwACgYhkOVK0xMb3pvPbd5Ylu3TuR7yn4 (Exemple)
+TOKEN= (Assign your bot's Token here)
 ```
 
 ## How to install dependencies ?
