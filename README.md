@@ -12,7 +12,7 @@ npm i
 
 ## How to config Token ?
 
-```json
+```bash
 //.env
 TOKEN=OTg3MDMxODc0NTg3MjI2Mjgy.Gif_Iv.4FVw1EwACgYhkOVK0xMb3pvPbd5Ylu3TuR7uy4 (Exemple)
 ```
