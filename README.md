@@ -10,7 +10,7 @@ cd Yamiko
 npm i
 ``````
 
-## How to config ?
+## How to config Token ?
 
 ```json
 //.env
