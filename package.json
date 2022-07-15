@@ -3,7 +3,7 @@
     "discord.js": "^13.8.1",
     "dotenv": "^16.0.1"
   },
-  "name": "pastle",
+  "name": "yamiko",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
