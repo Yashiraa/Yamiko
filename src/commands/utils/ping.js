@@ -1,4 +1,10 @@
+const { MessageActionRow, MessageButton } = require('discord.js')
 const Command = require('../../structures/Command')
+
+const actionRow = new MessageActionRow()
+    .addComponents([
+        new MessageButton().setStyle('DANGER').setLabel('Deletar').setCustomId('DELETAR')
+    ])
 
 module.exports = class extends Command {
     constructor(client, options) {
@@ -8,10 +14,22 @@ module.exports = class extends Command {
         })
     }
 
-    run = (interaction) => {
-        interaction.reply({
+    run = async (interaction) => {
+        const reply = await interaction.reply({
             content: `Latência do bot: \`${this.client.ws.ping}\``,
-            ephemeral: true
+            components: [actionRow],
+            fetchReply: true
+        })
+
+        const filter = (b) => b.user.id === interaction.user.id
+        const collect = reply.createMessageComponentCollector({ filter })
+
+        collect.on('collect', (i) => {
+            switch (i.customId) {
+                case 'DELETAR' :
+                    interaction.deleteReply()
+                    break;
+            }
         })
     }
 }

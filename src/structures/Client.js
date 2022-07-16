@@ -1,6 +1,6 @@
+const { join } = require('path')
 const { Client } = require('discord.js')
 const { readdirSync } = require('fs')
-const { join } = require('path')
 
 module.exports = class extends Client {
     constructor(options) {
